@@ -16,19 +16,9 @@
   </head>
 
   <body>
-    <header  style="background:url('relive_blue.jpg')";> <!--
-        no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    -->
-      <div class="inner">
-        <a href="{{ '/' | absolute_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-      </div>
+    <header style="padding-top:0;padding-bottom:0;">
+      <div class="inner" style="margin-top:0; margin-bottom:0;padding-top:2px;">
+        <a href="{{ '/' | absolute_url }}"><img src="relive_lavender.jpg" width="640" height="221" alt="{{ site.title }}"/></a></div>
     </header>
 
     <div id="content-wrapper">
@@ -36,21 +26,78 @@
         <section id="main-content">
           {{ content }}
         </section>
-<!--
         <aside id="sidebar">
-          {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="button">
-              <small>Download</small>
-              .zip file
-            </a>
-            <a href="{{ site.github.tar_url }}" class="button">
-              <small>Download</small>
-              .tar.gz file
-            </a>
-          {% endif %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>Register on</small> Google</a>
+            <style type="text/css">
+            /* Styling for the title (Month and Year) of the calendar */
+            div.title {
+                font: x-large Verdana, Arial, Helvetica, sans-serif;
+                text-align: center;
+                height: 40px;
+                background-color: white;
+                color: black;
+                }
+            /* Styling for the footer */
+            div.footer {
+                font: small Verdana, Arial, Helvetica, sans-serif;
+                text-align: center;
+                }
+            /* Styling for the overall table */
+            table {
+                font: 100% Verdana, Arial, Helvetica, sans-serif;
+                table-layout: fixed;
+                border-collapse: collapse;
+                width: 100%;
+                }
+            /* Styling for the column headers (days of the week) */
+            th {
+                padding: 0 0.5em;
+                text-align: center;
+                background-color:gray;
+                color:white;
+                font-size: x-small;
+                }
+            /* Styling for the individual cells (days) */
+            td  {
+                font-size: medium;
+                padding: 0.25em 0.25em;
+                width: 14%;
+                height: 25px;
+                text-align: left;
+                vertical-align: top;
+                }
+            /* Styling for the date numbers */
+            .date  {
+                font-size: medium;
+                padding: 0.25em 0.25em;
+                text-align: left;
+                vertical-align: top;
+                }
+            /* Class for individual days (coming in future release) */
+            .sun {
+                 color:red;
+                 }
+            /* Hide the month element (coming in future release) */
+            th.month {
+                visibility: hidden;
+                display:none;
+                }
+            td.hilite {
+                background-color: skyblue;
+                font-weight: bold;
+            }
+             </style>
+            <div class="title">August 2017</div>
+            <table border="1">
+            <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+            <tr><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">1</span></td><td><span class="date">2</span></td><td class="hilite"><span class="date">3</span></td><td  class="hilite"><span class="date">4</span></td><td  class="hilite"><span class="date">5</span></td></tr>
+            <tr><td><span class="date">6</span></td><td><span class="date">7</span></td><td><span class="date">8</span></td><td><span class="date">9</span></td><td><span class="date">10</span></td><td><span class="date">11</span></td><td><span class="date">12</span></td></tr>
+            <tr><td><span class="date">13</span></td><td><span class="date">14</span></td><td><span class="date">15</span></td><td><span class="date">16</span></td><td><span class="date">17</span></td><td><span class="date">18</span></td><td><span class="date">19</span></td></tr>
+            <tr><td><span class="date">20</span></td><td><span class="date">21</span></td><td><span class="date">22</span></td><td><span class="date">23</span></td><td><span class="date">24</span></td><td><span class="date">25</span></td><td><span class="date">26</span></td></tr>
+            <tr><td><span class="date">27</span></td><td><span class="date">28</span></td><td><span class="date">29</span></td><td><span class="date">30</span></td><td><span class="date">31</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td></tr>
+        </table>
+        <!-- Generated by <a href="http://freehtmlcalendar.com">FreeHTMLCalendar.com</a> Copyright &copy; 2011 John Dalbey.</div> -->
         </aside>
-    -->
+
       </div>
     </div>
 
