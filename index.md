@@ -5,7 +5,7 @@ Welcome friends. As you are aware by now, we will be hosting our 25<sup>th</sup>
 from **Aug 3 to Aug 5 2018**. We are starting our registration now to help us plan better and make
 this a great success. Let us encourage our entire batch to attend!
 
-The venue is getting finalized and will be published shortly.
+Checkout the <a href="agenda/">tentative agenda</a>.
 
 <img src="chart.png" height="371" width="600" alt="Current Enrollment"/>
 
